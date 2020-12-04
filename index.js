@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+require('dotenv').config()
 const client = new Discord.Client();
 
 //quando ficar on, é chamado
@@ -41,4 +42,4 @@ function streamWarning(msg) {
     }
 }
 
-client.login('Nzg0MTk4MDExMjAyNDM3MTMw.X8lzTw.q-B1B2IOtMRVQ0b0FQLf3MlmbmU');
+client.login(process.env.TOKEN);
